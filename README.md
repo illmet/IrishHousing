@@ -11,16 +11,18 @@ Some baseline plots include the colour coding the geographical locations. These 
 
 ![Image](images/National.png)  
 
-And for the Dublin region specifically:  
+However, a more interesting approach, given low dimensionality, is to select prices as the z axis. From the screenshots below, this really gives a sense of disproportionate property values around major cities, and especially a clear "mountain" that slopes downward in the neighbouring counties, around Dublin City. The full interactive 3d visualisation can be found in the visualisation notebook (requiring plotly). 
 
-![Image](images/Dublin.png)
-
-However, a more interesting approach, given low dimensionality, is to select prices as the z axis. From the screenshots below, this really gives a sense of disproportionate property values around major cities, and especially a clear "mountain" that slopes downward in the neighbouring counties, around Dublin City.  
-
-![Image](images/3dview.png)  
+![Image](images/3dView.png)  
 
 ## Clustering  
-For the clustering procedure,
+For the clustering procedure, the hierarchical agglomerative clustering was used. (There has been numerous attempts at other clustering, however this produced best results in terms of consistency). There has been some other attempts used, and in general (since there is no particularly straightforward objective metric for this exercise), the parameters that have been used were the most consistent with general pricing information available.
+
+As demonstrated in the Clustering notebook, there has been evident clusters that have certain localities in common. In the Dublin case, the highest four out of five clusters by average price are associated with Dublin 4, while with the other neighbourhoods the situation is not associated particularly, except for Dublin 18 (this may be to an inefficiency that has been introduced with identifying particular Dublin localities).
+
+For the nationwide case, there is a clear trend for Dublin being an absolute outlier (in fact the ten out of twenty-five clusters with the highest average price being dominated by Dublin, sometimes followed by the counties with other major cities like Galway and Cork, and semi-commuter counties like Meath and Louth).
+
+This project overall is mostly an early proof of concept if unsupervised clustering methods are useful for identifying geopgrahical dependencies, and in general given the identification of outliers and major high-price concentration areas, it has its merits. However there are disadvantages in terms of reliability, sensitivity to hyperparameters and precise metrics, as well as the computational requirements on particularly large datasets, and poor interpretability.
 
 ___
 
