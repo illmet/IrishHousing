@@ -1,5 +1,5 @@
 # Irish Housing
-Clustering model for Irish housing prices based on geographical location. The dataset contains all properties sold in 2023, available through the public property register [here] (https://www.propertypriceregister.ie/Website/NPSRA/pprweb.nsf/page/ppr-home-en).  
+Clustering model for Irish housing prices based on geographical location. The dataset contains all properties sold in 2023, available through the public property register [here](https://www.propertypriceregister.ie/Website/NPSRA/pprweb.nsf/page/ppr-home-en).  
 
 Data has been processed in the following way:
 
@@ -22,7 +22,7 @@ As demonstrated in the Clustering notebook, there has been evident clusters that
 
 For the nationwide case, there is a clear trend for Dublin being an absolute outlier (in fact the ten out of twenty-five clusters with the highest average price being dominated by Dublin, sometimes followed by the counties with other major cities like Galway and Cork, and semi-commuter counties like Meath and Louth).
 
-This project overall is mostly an early proof of concept if unsupervised clustering methods are useful for identifying geopgrahical dependencies, and in general given the identification of outliers and major high-price concentration areas, it has its merits. However there are disadvantages in terms of reliability, sensitivity to hyperparameters and precise metrics, as well as the computational requirements on particularly large datasets, and poor interpretability.
+This project overall is mostly an early proof of concept if unsupervised clustering methods are useful for identifying geographical dependencies, and in general given the identification of outliers and major high-price concentration areas, it has its merits. However there are disadvantages in terms of reliability, sensitivity to hyperparameters and precise metrics, as well as the computational requirements on particularly large datasets, and poor interpretability.
 
 ___
 
